@@ -1,5 +1,4 @@
-# Grades    
-
+# Grades Inputs   
 labs_completed = int(input("Enter the number of labs completed: "))
 
 quiz_completed = int(input("Enter the number of quizzes completed: "))
@@ -17,8 +16,8 @@ final = int(input("Enter grade for Final Exam: "))
 midterm_and_final_prep = int(input("Enter grade for Midterms and Final Preparation: "))
 
 
-#All Grades Weighted
 
+#All Grades Weighted
 labs_weighted = labs_completed/6 * 20 if labs_completed<= 6 else 20
 
 quiz_weighted = quiz_completed/6 * 15 if quiz_completed<= 6 else 15
@@ -31,10 +30,12 @@ final_weighted = final*0.18
 midterm_and_final_prep_weighted = midterm_and_final_prep  * 0.06
 
 
+
 #Total
 total_grade = labs_weighted + quiz_weighted + assignment_weighted + midterms_weighted + final_weighted + midterm_and_final_prep_weighted
 
 total_grade = round(total_grade, 2)
+
 
 #Output
 print("Your grade is: "+str(total_grade))
